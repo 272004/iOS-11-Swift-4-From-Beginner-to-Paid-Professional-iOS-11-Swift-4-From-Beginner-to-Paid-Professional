@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7DE09C782173B9440029A729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE09C772173B9440029A729 /* AppDelegate.swift */; };
-		7DE09C7A2173B9440029A729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE09C792173B9440029A729 /* ViewController.swift */; };
+		7DE09C7A2173B9440029A729 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE09C792173B9440029A729 /* MainVC.swift */; };
 		7DE09C7D2173B9440029A729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE09C7B2173B9440029A729 /* Main.storyboard */; };
 		7DE09C7F2173B9470029A729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE09C7E2173B9470029A729 /* Assets.xcassets */; };
 		7DE09C822173B9470029A729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE09C802173B9470029A729 /* LaunchScreen.storyboard */; };
+		7DE09C8C2173C2F90029A729 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE09C8B2173C2F90029A729 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7DE09C742173B9440029A729 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE09C772173B9440029A729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DE09C792173B9440029A729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE09C792173B9440029A729 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7DE09C7C2173B9440029A729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DE09C7E2173B9470029A729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE09C812173B9470029A729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE09C832173B9470029A729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE09C8B2173C2F90029A729 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		7DE09C762173B9440029A729 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				7DE09C8A2173C2A30029A729 /* Views */,
+				7DE09C892173BB290029A729 /* Controller */,
 				7DE09C772173B9440029A729 /* AppDelegate.swift */,
-				7DE09C792173B9440029A729 /* ViewController.swift */,
 				7DE09C7B2173B9440029A729 /* Main.storyboard */,
 				7DE09C7E2173B9470029A729 /* Assets.xcassets */,
 				7DE09C802173B9470029A729 /* LaunchScreen.storyboard */,
 				7DE09C832173B9470029A729 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		7DE09C892173BB290029A729 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DE09C792173B9440029A729 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DE09C8A2173C2A30029A729 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DE09C8B2173C2F90029A729 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE09C7A2173B9440029A729 /* ViewController.swift in Sources */,
+				7DE09C8C2173C2F90029A729 /* CurrencyTxtField.swift in Sources */,
+				7DE09C7A2173B9440029A729 /* MainVC.swift in Sources */,
 				7DE09C782173B9440029A729 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +301,6 @@
 		7DE09C872173B9470029A729 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3697S79ZZ9;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
@@ -299,7 +318,6 @@
 		7DE09C882173B9470029A729 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3697S79ZZ9;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
