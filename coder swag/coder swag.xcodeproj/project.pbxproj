@@ -13,6 +13,8 @@
 		7D96CC30217B7B67005F0872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D96CC2F217B7B67005F0872 /* Assets.xcassets */; };
 		7D96CC33217B7B67005F0872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D96CC31217B7B67005F0872 /* LaunchScreen.storyboard */; };
 		7D96CC3E217B85A0005F0872 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96CC3D217B85A0005F0872 /* CategoryCell.swift */; };
+		7D96CC40217BBD0D005F0872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96CC3F217BBD0D005F0872 /* Category.swift */; };
+		7D96CC43217BBF52005F0872 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96CC42217BBF52005F0872 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7D96CC32217B7B67005F0872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D96CC34217B7B67005F0872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D96CC3D217B85A0005F0872 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		7D96CC3F217BBD0D005F0872 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7D96CC42217BBF52005F0872 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		7D96CC27217B7B5F005F0872 /* coder swag */ = {
 			isa = PBXGroup;
 			children = (
+				7D96CC41217BBF2F005F0872 /* Services */,
 				7D96CC3C217B84BA005F0872 /* View */,
 				7D96CC3B217B8471005F0872 /* Model */,
 				7D96CC3A217B8451005F0872 /* Controller */,
@@ -79,6 +84,7 @@
 		7D96CC3B217B8471005F0872 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7D96CC3F217BBD0D005F0872 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				7D96CC3D217B85A0005F0872 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7D96CC41217BBF2F005F0872 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7D96CC42217BBF52005F0872 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D96CC43217BBF52005F0872 /* DataService.swift in Sources */,
 				7D96CC2B217B7B5F005F0872 /* CategoriesVC.swift in Sources */,
 				7D96CC29217B7B5F005F0872 /* AppDelegate.swift in Sources */,
 				7D96CC3E217B85A0005F0872 /* CategoryCell.swift in Sources */,
+				7D96CC40217BBD0D005F0872 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
